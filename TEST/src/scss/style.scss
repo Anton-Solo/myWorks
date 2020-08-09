@@ -1,0 +1,28 @@
+@import 'base/variables';
+
+* {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    background:#FFF5EC;
+}
+
+.container {
+    width: 100%;
+    max-width: 1640px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: 0 auto;
+}
+
+@import 'blocks/food';
+@import 'blocks/header';
+@import 'blocks/nav';
+@import 'blocks/discover';
+@import 'blocks/panel';
+@import 'blocks/form';
+@import 'blocks/meal';
+@import 'blocks/media';

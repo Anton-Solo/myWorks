@@ -1,0 +1,12 @@
+.header{
+    padding-top: 27px;
+    display: inline-block;
+    &__inner{
+        display: flex;
+        font-size: 1rem;
+        &-main{
+            display: flex;
+        }
+        
+    }
+}

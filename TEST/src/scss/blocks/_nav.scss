@@ -1,0 +1,12 @@
+.nav{
+    margin-left: 9.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    &__link {
+        margin-right: 4.6rem;
+        text-decoration: none;
+        color: $bl;
+    }
+}

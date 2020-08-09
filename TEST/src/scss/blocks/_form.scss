@@ -1,0 +1,32 @@
+.form {
+    position: relative;
+    width: 42rem;
+    display: inline-block;
+    &__inp {
+        font-size: 1.4rem;
+        border: none;
+        outline: none;
+        width: 100%;
+        height: 6.2rem;
+        background: $wh;
+        padding-left: 3.4rem;
+    }
+    &__btn {
+        font-size: 2.1rem;
+        font-weight: 600;
+        width: 12.9rem;
+        height: 5.1rem;
+        border: none;
+        border-top-left-radius: 6.2rem;
+        color: $wh;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0.6rem;
+        background: $main;
+        cursor: pointer;
+        &:hover {
+            background: #2E266F;
+        }
+    }
+}

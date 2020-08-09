@@ -1,0 +1,45 @@
+.discover{
+    display: flex;
+    &__main{
+        display: flex;
+        flex-direction: column;
+    }
+    h1 {
+        margin: 82px 0 36px 0;
+        font-size: 4.5rem;
+        font-weight: 700;
+        line-height: 1;
+        color: $bl;
+    }
+    &-food {
+        font-size: 12.7rem;
+        font-weight: 700;
+        color: rgba($bl, 0.04);
+    }
+    &__location{
+        position: relative;
+        margin-top: 220px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 23.4rem;
+        height: 5.5rem;
+        border-top-right-radius: 6.2rem;
+        border-bottom-right-radius: 6.2rem;
+        color: $wh;
+        font-size: 1.9rem;
+        background: $main;
+        &:before{
+            content: '';
+            position: absolute;
+            width: 37px;
+            height: 52px;
+            background: url(../../img/placeholder.png);
+            left: 3.6rem;
+        }
+        &:hover {
+            background: #2E266F;
+        }
+    }
+    
+}
