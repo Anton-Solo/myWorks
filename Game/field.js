@@ -143,7 +143,6 @@ function checkField () {
         
 
     }
-    console.log(check);
     if (check.length < 1) {
         create = randomSq ;
     } else if (check.length > 10) {

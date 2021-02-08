@@ -1,6 +1,5 @@
 let highscoreList = [];
 let table = document.querySelector('.game_result-table');
-
 //create span for every player
 
 function createStr(data) {
@@ -20,7 +19,6 @@ function loadRes() {
 };
 
 // save results in local storage, create array from results, sort results
-
 function saveResult () {
     let saveBtn = document.querySelector('.game_popup-save');
     saveBtn.addEventListener('click', saveMe);

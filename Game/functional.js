@@ -1,7 +1,7 @@
 //load results from local storage
 
 document.addEventListener('DOMContentLoaded', function () {
-    if(!window.localStorage.length < 1) {
+    if(window.localStorage.length > 1) {
         highscoreList = JSON.parse(localStorage.getItem('gameResult'));
         loadRes();
     }  
@@ -32,7 +32,7 @@ function timerCount () {
         seconds--;
         counter.innerHTML = "0:" + (seconds < 10 ? "0" : "") + String(seconds);
         if ( seconds > 0 ) {
-            setTimeout(tick , 1000);
+            setTimeout(tick , 100);
         } else {
             document.querySelector('.game_popup-wrapper').style.display = "block";
             field.innerHTML = '';
