@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <form class="search">
+                        <input class="search__input" type="text" name="srch" placeholder="Search for courses, lessons, resources an...">
+                        <button class="search__btn" type="submit">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.94286 0C7.519 0 9.03059 0.62612 10.1451 1.74062C11.2596 2.85512 11.8857 4.36671 11.8857 5.94286C11.8857 7.41486 11.3463 8.768 10.4594 9.81029L10.7063 10.0571H11.4286L16 14.6286L14.6286 16L10.0571 11.4286V10.7063L9.81029 10.4594C8.768 11.3463 7.41486 11.8857 5.94286 11.8857C4.36671 11.8857 2.85512 11.2596 1.74062 10.1451C0.62612 9.03059 0 7.519 0 5.94286C0 4.36671 0.62612 2.85512 1.74062 1.74062C2.85512 0.62612 4.36671 0 5.94286 0ZM5.94286 1.82857C3.65714 1.82857 1.82857 3.65714 1.82857 5.94286C1.82857 8.22857 3.65714 10.0571 5.94286 10.0571C8.22857 10.0571 10.0571 8.22857 10.0571 5.94286C10.0571 3.65714 8.22857 1.82857 5.94286 1.82857Z" fill="white"/>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+                <div class="col-5 offset-md-2">
+                    <nav class="header__nav">
+                        <a href="#">All Courses</a>
+                        <a href="#">For Business</a>
+                        <span class="header__nav-line"></span>
+                        <a href="#">Log In</a>
+                        <a href="#" class="header__nav-started">Get Started</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <div class="subheader">
+            <div class="container">
+                <h1 class="h1">Pricing Plans</h1>
+                <h4 class="h4">Upgrade your skills. Choose a plan that works for your budget and career goals.</h4>
+            
+                <div class="subheader__cards">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="subheader__cards-item">
+                                <h5 class="h5">Most popular!</h5>
+                                <div class="card">
+                                    <div class="card__type">
+                                        <span>All Access Membership</span>
+                                        <span class="card__type-main">Basic</span>
+                                        <span>Includes all courses from many programs</span>
+                                    </div>
+                                    <form class="card__plan">                                      
+                                        <h3 class="h3">Pick your plan:</h3>
+                                        
+                                        <div>
+                                            <input type="radio" checked name="pick-plan" id="plan-less">
+                                            <label for="plan-less" class="card__plan-label">
+                                                <span class="card__plan-price">$47</span>/month
+                                                <span class="card__plan-txt">(pay annually — $564 / year)</span>
+                                            </label>
+                                        </div>
+                                        <div>
+                                            <input type="radio" name="pick-plan" id="plan-more">
+                                            <label for="plan-more" class="card__plan-label">
+                                                <span class="card__plan-price">$87</span>/month
+                                                <span class="card__plan-txt">(pay per month)</span>
+                                            </label>
+                                        </div>
+                                        <button type="submit" class="main_btn">Enroll Now</button>
+                                    </form>
+
+                                    <div class="card__includes">
+                                        <span>Includes:</span>
+                                        <ul class="card__includes-list">
+                                            <li>
+                                                <span>All 100+ Courses</span>
+                                                
+                                                <div class="card__includes-spec">
+                                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M16 8C16 12.4183 12.4183 16 8 16C3.58172 16 0 12.4183 0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8ZM9.54321 8.12092L10.1832 7.46669C10.5885 7.05425 10.8445 6.49247 10.8445 5.86669C10.8445 5.1123 10.5449 4.3888 10.0114 3.85537C9.47798 3.32193 8.75449 3.02225 8.0001 3.02225C7.2457 3.02225 6.52221 3.32193 5.98877 3.85537C5.45534 4.3888 5.15565 5.1123 5.15565 5.86669H6.57788C6.57788 5.4895 6.72772 5.12775 6.99443 4.86103C7.26115 4.59431 7.6229 4.44447 8.0001 4.44447C8.78232 4.44447 9.42232 5.07736 9.42232 5.86669C9.42232 6.25781 9.26587 6.61336 9.00276 6.86936L8.12099 7.76536C7.60899 8.27736 7.28899 8.98847 7.28899 9.77781V10.1334H8.71121C8.71121 9.06669 9.03121 8.63292 9.54321 8.12092ZM7.28899 11.5556V12.9778H8.71121V11.5556H7.28899Z" fill="#3271D2"/>
+                                                    </svg>
+                                                    <div class="tool">Default tooltip. Here you’ll find something on the left.</div>
+                                                </div>
+                                                
+                                                
+                                            </li>
+                                            <li>
+                                                <span>All 4 Certificate Programs</span>
+                                                <div class="card__includes-spec">
+                                                    <svg  width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M16 8C16 12.4183 12.4183 16 8 16C3.58172 16 0 12.4183 0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8ZM9.54321 8.12092L10.1832 7.46669C10.5885 7.05425 10.8445 6.49247 10.8445 5.86669C10.8445 5.1123 10.5449 4.3888 10.0114 3.85537C9.47798 3.32193 8.75449 3.02225 8.0001 3.02225C7.2457 3.02225 6.52221 3.32193 5.98877 3.85537C5.45534 4.3888 5.15565 5.1123 5.15565 5.86669H6.57788C6.57788 5.4895 6.72772 5.12775 6.99443 4.86103C7.26115 4.59431 7.6229 4.44447 8.0001 4.44447C8.78232 4.44447 9.42232 5.07736 9.42232 5.86669C9.42232 6.25781 9.26587 6.61336 9.00276 6.86936L8.12099 7.76536C7.60899 8.27736 7.28899 8.98847 7.28899 9.77781V10.1334H8.71121C8.71121 9.06669 9.03121 8.63292 9.54321 8.12092ZM7.28899 11.5556V12.9778H8.71121V11.5556H7.28899Z" fill="#3271D2"/>
+                                                    </svg>
+                                                    <div class="tool">Default tooltip. Here you’ll find something on the left.</div>
+                                                </div>
+                                                
+                                            </li>
+                                            <li>Excel, PPT, and PDF Files</li>
+                                            <li>Digital Blockchain Verified Certificates</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="subheader__cards-item subheader__cards-ben">
+                                <h5 class="h5 h5_ben">Most benefits!</h5>
+                                <div class="card">
+                                    <div class="card__type">
+                                        <span>All Access Membership</span>
+                                        <span class="card__type-main">Full-Immersion</span>
+                                        <span>Everything in the Basic plan, plus more</span>
+                                    </div>
+                                    <form class="card__plan">                                      
+                                        <div class="card__plan-label">
+                                            <span class="card__plan-price">$77</span>/month
+                                            <span class="card__plan-txt">(pay annually — $924 / year)</span>
+                                        </div>
+                                        <button type="submit" class="main_btn main_btn-dark">Enroll Now</button>
+                                    </form>
+                                    <div class="card__includes">
+                                        <span>Everything in Basic, plus:</span>
+                                        <ul class="card__includes-list">
+                                            <li>Capital IQ & EIKON Partner Integrations</li>
+                                            <li>
+                                                
+                                                <span>Premium Email Support</span>
+                                                <div class="card__includes-spec">
+                                                    <svg  width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M16 8C16 12.4183 12.4183 16 8 16C3.58172 16 0 12.4183 0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8ZM9.54321 8.12092L10.1832 7.46669C10.5885 7.05425 10.8445 6.49247 10.8445 5.86669C10.8445 5.1123 10.5449 4.3888 10.0114 3.85537C9.47798 3.32193 8.75449 3.02225 8.0001 3.02225C7.2457 3.02225 6.52221 3.32193 5.98877 3.85537C5.45534 4.3888 5.15565 5.1123 5.15565 5.86669H6.57788C6.57788 5.4895 6.72772 5.12775 6.99443 4.86103C7.26115 4.59431 7.6229 4.44447 8.0001 4.44447C8.78232 4.44447 9.42232 5.07736 9.42232 5.86669C9.42232 6.25781 9.26587 6.61336 9.00276 6.86936L8.12099 7.76536C7.60899 8.27736 7.28899 8.98847 7.28899 9.77781V10.1334H8.71121C8.71121 9.06669 9.03121 8.63292 9.54321 8.12092ZM7.28899 11.5556V12.9778H8.71121V11.5556H7.28899Z" fill="#3271D2"/>
+                                                    </svg>
+                                                    <div class="tool">Default tooltip. Here you’ll find something on the left.</div>
+                                                </div>
+                                                
+                                            </li>
+                                            <li >
+                                                <span>Model Review & Feedback</span>
+                                                <div class="card__includes-spec">
+                                                    <svg  width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M16 8C16 12.4183 12.4183 16 8 16C3.58172 16 0 12.4183 0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8ZM9.54321 8.12092L10.1832 7.46669C10.5885 7.05425 10.8445 6.49247 10.8445 5.86669C10.8445 5.1123 10.5449 4.3888 10.0114 3.85537C9.47798 3.32193 8.75449 3.02225 8.0001 3.02225C7.2457 3.02225 6.52221 3.32193 5.98877 3.85537C5.45534 4.3888 5.15565 5.1123 5.15565 5.86669H6.57788C6.57788 5.4895 6.72772 5.12775 6.99443 4.86103C7.26115 4.59431 7.6229 4.44447 8.0001 4.44447C8.78232 4.44447 9.42232 5.07736 9.42232 5.86669C9.42232 6.25781 9.26587 6.61336 9.00276 6.86936L8.12099 7.76536C7.60899 8.27736 7.28899 8.98847 7.28899 9.77781V10.1334H8.71121C8.71121 9.06669 9.03121 8.63292 9.54321 8.12092ZM7.28899 11.5556V12.9778H8.71121V11.5556H7.28899Z" fill="#3271D2"/>
+                                                    </svg>
+                                                    <div class="tool">Default tooltip. Here you’ll find something on the left.</div>
+                                                </div>
+                                            </li>
+                                            <li >
+                                                <span>Additional Case Studies</span>
+                                                <div class="card__includes-spec">
+                                                    <svg  width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M16 8C16 12.4183 12.4183 16 8 16C3.58172 16 0 12.4183 0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8ZM9.54321 8.12092L10.1832 7.46669C10.5885 7.05425 10.8445 6.49247 10.8445 5.86669C10.8445 5.1123 10.5449 4.3888 10.0114 3.85537C9.47798 3.32193 8.75449 3.02225 8.0001 3.02225C7.2457 3.02225 6.52221 3.32193 5.98877 3.85537C5.45534 4.3888 5.15565 5.1123 5.15565 5.86669H6.57788C6.57788 5.4895 6.72772 5.12775 6.99443 4.86103C7.26115 4.59431 7.6229 4.44447 8.0001 4.44447C8.78232 4.44447 9.42232 5.07736 9.42232 5.86669C9.42232 6.25781 9.26587 6.61336 9.00276 6.86936L8.12099 7.76536C7.60899 8.27736 7.28899 8.98847 7.28899 9.77781V10.1334H8.71121C8.71121 9.06669 9.03121 8.63292 9.54321 8.12092ZM7.28899 11.5556V12.9778H8.71121V11.5556H7.28899Z" fill="#3271D2"/>
+                                                    </svg>
+                                                    <div class="tool">Default tooltip. Here you’ll find something on the left.</div>
+                                                </div>
+                                            </li>
+                                            <li>Resume & Cover Letter Review</li>
+                                            <li>A FREE Modeling Competition Entry</li>
+                                        </ul>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main"> 
+        <div class="container">
+             <table class="properties">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th class="properties__head">
+                            <div>
+                                <span>All Access Membership</span>
+                                <span class="properties__head-main">Basic</span>
+                                <span>$564 / year</span>
+                            </div>
+                        </th>
+                        <th class="properties__head properties__head-full">
+                            <div>
+                                <span>All Access Membership</span>
+                                <span class="properties__head-main">Full-Immersion</span>
+                                <span>$924 / year</span>
+                            </div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <div>
+                                <span>All 100+ Courses</span>
+                                <div class="card__includes-spec">
+                                    <svg  width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M16 8C16 12.4183 12.4183 16 8 16C3.58172 16 0 12.4183 0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8ZM9.54321 8.12092L10.1832 7.46669C10.5885 7.05425 10.8445 6.49247 10.8445 5.86669C10.8445 5.1123 10.5449 4.3888 10.0114 3.85537C9.47798 3.32193 8.75449 3.02225 8.0001 3.02225C7.2457 3.02225 6.52221 3.32193 5.98877 3.85537C5.45534 4.3888 5.15565 5.1123 5.15565 5.86669H6.57788C6.57788 5.4895 6.72772 5.12775 6.99443 4.86103C7.26115 4.59431 7.6229 4.44447 8.0001 4.44447C8.78232 4.44447 9.42232 5.07736 9.42232 5.86669C9.42232 6.25781 9.26587 6.61336 9.00276 6.86936L8.12099 7.76536C7.60899 8.27736 7.28899 8.98847 7.28899 9.77781V10.1334H8.71121C8.71121 9.06669 9.03121 8.63292 9.54321 8.12092ZM7.28899 11.5556V12.9778H8.71121V11.5556H7.28899Z" fill="#3271D2"/>
+                                    </svg>
+                                    <div class="tool">Default tooltip. Here you’ll find something on the left.</div>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <img src="img/check-green.png" alt="check">
+                        </td>
+                        <td>
+                            <img src="img/check-black.png" alt="check">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div>
+                                <span>All Certificate Programs</span>
+                                <div class="card__includes-spec">
+                                    <svg  width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M16 8C16 12.4183 12.4183 16 8 16C3.58172 16 0 12.4183 0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8ZM9.54321 8.12092L10.1832 7.46669C10.5885 7.05425 10.8445 6.49247 10.8445 5.86669C10.8445 5.1123 10.5449 4.3888 10.0114 3.85537C9.47798 3.32193 8.75449 3.02225 8.0001 3.02225C7.2457 3.02225 6.52221 3.32193 5.98877 3.85537C5.45534 4.3888 5.15565 5.1123 5.15565 5.86669H6.57788C6.57788 5.4895 6.72772 5.12775 6.99443 4.86103C7.26115 4.59431 7.6229 4.44447 8.0001 4.44447C8.78232 4.44447 9.42232 5.07736 9.42232 5.86669C9.42232 6.25781 9.26587 6.61336 9.00276 6.86936L8.12099 7.76536C7.60899 8.27736 7.28899 8.98847 7.28899 9.77781V10.1334H8.71121C8.71121 9.06669 9.03121 8.63292 9.54321 8.12092ZM7.28899 11.5556V12.9778H8.71121V11.5556H7.28899Z" fill="#3271D2"/>
+                                    </svg>
+                                    <div class="tool">Default tooltip. Here you’ll find something on the left.</div>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <img src="img/check-green.png" alt="check">
+                        </td>
+                        <td>
+                            <img src="img/check-black.png" alt="check">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span>Quizzes, Assignments, and Tests</span>
+                        </td>
+                        <td>
+                            <img src="img/check-green.png" alt="check">
+                        </td>
+                        <td>
+                            <img src="img/check-black.png" alt="check">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span>Excel, PPT, and PDF Files</span>
+                        </td>
+                        <td>
+                            <img src="img/check-green.png" alt="check">
+                        </td>
+                        <td>
+                            <img src="img/check-black.png" alt="check">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span>Digital Blockchain Verified Certificate</span>
+                        </td>
+                        <td>
+                            <img src="img/check-green.png" alt="check">
+                        </td>
+                        <td>
+                            <img src="img/check-black.png" alt="check">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span>Another Shared Benefit</span>
+                        </td>
+                        <td>
+                            <img src="img/check-green.png" alt="check">
+                        </td>
+                        <td>
+                            <img src="img/check-black.png" alt="check">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span>Another Shared Benefit</span>
+                        </td>
+                        <td>
+                            <img src="img/check-green.png" alt="check">
+                        </td>
+                        <td>
+                            <img src="img/check-black.png" alt="check">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span>Another Shared Benefit</span>
+                        </td>
+                        <td>
+                            <img src="img/check-none.png" alt="check">
+                        </td>
+                        <td>
+                            <img src="img/check-black.png" alt="check">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div>
+                                <span>Exclusive Partner Integrations</span>
+                                <div class="card__includes-spec">
+                                    <svg  width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M16 8C16 12.4183 12.4183 16 8 16C3.58172 16 0 12.4183 0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8ZM9.54321 8.12092L10.1832 7.46669C10.5885 7.05425 10.8445 6.49247 10.8445 5.86669C10.8445 5.1123 10.5449 4.3888 10.0114 3.85537C9.47798 3.32193 8.75449 3.02225 8.0001 3.02225C7.2457 3.02225 6.52221 3.32193 5.98877 3.85537C5.45534 4.3888 5.15565 5.1123 5.15565 5.86669H6.57788C6.57788 5.4895 6.72772 5.12775 6.99443 4.86103C7.26115 4.59431 7.6229 4.44447 8.0001 4.44447C8.78232 4.44447 9.42232 5.07736 9.42232 5.86669C9.42232 6.25781 9.26587 6.61336 9.00276 6.86936L8.12099 7.76536C7.60899 8.27736 7.28899 8.98847 7.28899 9.77781V10.1334H8.71121C8.71121 9.06669 9.03121 8.63292 9.54321 8.12092ZM7.28899 11.5556V12.9778H8.71121V11.5556H7.28899Z" fill="#3271D2"/>
+                                    </svg>
+                                    <div class="tool">Default tooltip. Here you’ll find something on the left.</div>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <img src="img/check-none.png" alt="check">
+                        </td>
+                        <td>
+                            <img src="img/check-black.png" alt="check">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div>
+                                <span>Premium Email Support</span>
+                                <div class="card__includes-spec">
+                                    <svg  width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M16 8C16 12.4183 12.4183 16 8 16C3.58172 16 0 12.4183 0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8ZM9.54321 8.12092L10.1832 7.46669C10.5885 7.05425 10.8445 6.49247 10.8445 5.86669C10.8445 5.1123 10.5449 4.3888 10.0114 3.85537C9.47798 3.32193 8.75449 3.02225 8.0001 3.02225C7.2457 3.02225 6.52221 3.32193 5.98877 3.85537C5.45534 4.3888 5.15565 5.1123 5.15565 5.86669H6.57788C6.57788 5.4895 6.72772 5.12775 6.99443 4.86103C7.26115 4.59431 7.6229 4.44447 8.0001 4.44447C8.78232 4.44447 9.42232 5.07736 9.42232 5.86669C9.42232 6.25781 9.26587 6.61336 9.00276 6.86936L8.12099 7.76536C7.60899 8.27736 7.28899 8.98847 7.28899 9.77781V10.1334H8.71121C8.71121 9.06669 9.03121 8.63292 9.54321 8.12092ZM7.28899 11.5556V12.9778H8.71121V11.5556H7.28899Z" fill="#3271D2"/>
+                                    </svg>
+                                    <div class="tool">Default tooltip. Here you’ll find something on the left.</div>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <img src="img/check-none.png" alt="check">
+                        </td>
+                        <td>
+                            <img src="img/check-black.png" alt="check">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div>
+                                <span>Model Review & Feedback</span>
+                                <div class="card__includes-spec">
+                                    <svg  width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M16 8C16 12.4183 12.4183 16 8 16C3.58172 16 0 12.4183 0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8ZM9.54321 8.12092L10.1832 7.46669C10.5885 7.05425 10.8445 6.49247 10.8445 5.86669C10.8445 5.1123 10.5449 4.3888 10.0114 3.85537C9.47798 3.32193 8.75449 3.02225 8.0001 3.02225C7.2457 3.02225 6.52221 3.32193 5.98877 3.85537C5.45534 4.3888 5.15565 5.1123 5.15565 5.86669H6.57788C6.57788 5.4895 6.72772 5.12775 6.99443 4.86103C7.26115 4.59431 7.6229 4.44447 8.0001 4.44447C8.78232 4.44447 9.42232 5.07736 9.42232 5.86669C9.42232 6.25781 9.26587 6.61336 9.00276 6.86936L8.12099 7.76536C7.60899 8.27736 7.28899 8.98847 7.28899 9.77781V10.1334H8.71121C8.71121 9.06669 9.03121 8.63292 9.54321 8.12092ZM7.28899 11.5556V12.9778H8.71121V11.5556H7.28899Z" fill="#3271D2"/>
+                                    </svg>
+                                    <div class="tool">Default tooltip. Here you’ll find something on the left.</div>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <img src="img/check-none.png" alt="check">
+                        </td>
+                        <td>
+                            <img src="img/check-black.png" alt="check">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div>
+                                <span>Additional Case Studies</span>
+                                <div class="card__includes-spec">
+                                    <svg  width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M16 8C16 12.4183 12.4183 16 8 16C3.58172 16 0 12.4183 0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8ZM9.54321 8.12092L10.1832 7.46669C10.5885 7.05425 10.8445 6.49247 10.8445 5.86669C10.8445 5.1123 10.5449 4.3888 10.0114 3.85537C9.47798 3.32193 8.75449 3.02225 8.0001 3.02225C7.2457 3.02225 6.52221 3.32193 5.98877 3.85537C5.45534 4.3888 5.15565 5.1123 5.15565 5.86669H6.57788C6.57788 5.4895 6.72772 5.12775 6.99443 4.86103C7.26115 4.59431 7.6229 4.44447 8.0001 4.44447C8.78232 4.44447 9.42232 5.07736 9.42232 5.86669C9.42232 6.25781 9.26587 6.61336 9.00276 6.86936L8.12099 7.76536C7.60899 8.27736 7.28899 8.98847 7.28899 9.77781V10.1334H8.71121C8.71121 9.06669 9.03121 8.63292 9.54321 8.12092ZM7.28899 11.5556V12.9778H8.71121V11.5556H7.28899Z" fill="#3271D2"/>
+                                    </svg>
+                                    <div class="tool">Default tooltip. Here you’ll find something on the left.</div>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <img src="img/check-none.png" alt="check">
+                        </td>
+                        <td>
+                            <img src="img/check-black.png" alt="check">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div>
+                                <span>Résumé & Cover Letter Review</span>
+                                <div class="card__includes-spec">
+                                    <svg  width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M16 8C16 12.4183 12.4183 16 8 16C3.58172 16 0 12.4183 0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8ZM9.54321 8.12092L10.1832 7.46669C10.5885 7.05425 10.8445 6.49247 10.8445 5.86669C10.8445 5.1123 10.5449 4.3888 10.0114 3.85537C9.47798 3.32193 8.75449 3.02225 8.0001 3.02225C7.2457 3.02225 6.52221 3.32193 5.98877 3.85537C5.45534 4.3888 5.15565 5.1123 5.15565 5.86669H6.57788C6.57788 5.4895 6.72772 5.12775 6.99443 4.86103C7.26115 4.59431 7.6229 4.44447 8.0001 4.44447C8.78232 4.44447 9.42232 5.07736 9.42232 5.86669C9.42232 6.25781 9.26587 6.61336 9.00276 6.86936L8.12099 7.76536C7.60899 8.27736 7.28899 8.98847 7.28899 9.77781V10.1334H8.71121C8.71121 9.06669 9.03121 8.63292 9.54321 8.12092ZM7.28899 11.5556V12.9778H8.71121V11.5556H7.28899Z" fill="#3271D2"/>
+                                    </svg>
+                                    <div class="tool">Default tooltip. Here you’ll find something on the left.</div>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <img src="img/check-none.png" alt="check">
+                        </td>
+                        <td>
+                            <img src="img/check-black.png" alt="check">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>    
+                            <div>
+                                <span>One FREE Financial Modeling Competition Entry</span>
+                                <div class="card__includes-spec">
+                                    <svg  width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M16 8C16 12.4183 12.4183 16 8 16C3.58172 16 0 12.4183 0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8ZM9.54321 8.12092L10.1832 7.46669C10.5885 7.05425 10.8445 6.49247 10.8445 5.86669C10.8445 5.1123 10.5449 4.3888 10.0114 3.85537C9.47798 3.32193 8.75449 3.02225 8.0001 3.02225C7.2457 3.02225 6.52221 3.32193 5.98877 3.85537C5.45534 4.3888 5.15565 5.1123 5.15565 5.86669H6.57788C6.57788 5.4895 6.72772 5.12775 6.99443 4.86103C7.26115 4.59431 7.6229 4.44447 8.0001 4.44447C8.78232 4.44447 9.42232 5.07736 9.42232 5.86669C9.42232 6.25781 9.26587 6.61336 9.00276 6.86936L8.12099 7.76536C7.60899 8.27736 7.28899 8.98847 7.28899 9.77781V10.1334H8.71121C8.71121 9.06669 9.03121 8.63292 9.54321 8.12092ZM7.28899 11.5556V12.9778H8.71121V11.5556H7.28899Z" fill="#3271D2"/>
+                                    </svg>
+                                    <div class="tool">Default tooltip. Here you’ll find something on the left.</div>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <img src="img/check-none.png" alt="check">
+                        </td>
+                        <td>
+                            <img src="img/check-black.png" alt="check">
+                        </td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td></td>
+                        <td class="properties__foot">
+                            <div>
+                                <span class="properties__foot-main">Basic</span>
+                                <span>$564 / year</span>
+                                <button class="main_btn">Enroll Now</button>
+                            </div>
+                        </td>
+                        <td class="properties__foot">
+                            <div>
+                                <span class="properties__foot-main">Full-Immersion</span>
+                                <span>$924 / year</span>
+                                <button class="main_btn main_btn-dark">Enroll Now</button>
+                            </div>
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+
+        <div class="questions">
+            <div class="container">
+                <div class="col-md-10 offset-md-1">
+                    <h2 class="h2">Frequently Asked Questions</h2>
+
+                    <div class="questions__block">
+                        <div class="question fn_switch">
+                            <span>Can I download the Excel files and financial modeling templates?</span>
+                        </div>
+                        <div class="dropdown">
+                            Yes you can
+                        </div>
+
+                        <div class="question fn_switch">
+                            <span>How long do I have to complete the course?</span>
+                        </div>
+                        <div class="dropdown">
+                           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque sequi aliquam doloremque nostrum ipsam nemo sunt ut, reprehenderit culpa odit quae libero nam natus, adipisci facilis cumque voluptatibus quas nihil!
+                        </div>
+
+                        <div class="question fn_switch">
+                            <span>Are courses verified?</span>
+                        </div>
+                        <div class="dropdown">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem sequi eaque esse totam maiores expedita ea ex sed consectetur, repellat asperiores natus earum. Quo temporibus doloremque mollitia voluptatibus culpa aliquam.
+                        </div>
+
+                        <div class="question fn_switch">
+                            <span>Are there additional fees or costs? </span>
+                        </div>
+                        <div class="dropdown">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea esse consequatur rerum veniam sequi facere cum pariatur temporibus debitis, rem vel, hic nihil perferendis, dolor molestiae unde velit sunt amet!
+                        </div>
+
+                        <div class="question fn_switch">
+                            <span>Are there additional fees or costs? </span>
+                        </div>
+                        <div class="dropdown">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem obcaecati architecto eaque, at ut sapiente amet dolor quo eius deserunt aut, eligendi enim excepturi impedit molestias quos laudantium fugiat optio.
+                        </div>
+
+                        <div class="question fn_switch">
+                            <span>What currency are your courses priced in? </span>
+                        </div>
+                        <div class="dropdown">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem obcaecati architecto eaque, at ut sapiente amet dolor quo eius deserunt aut, eligendi enim excepturi impedit molestias quos laudantium fugiat optio.
+                        </div>
+
+                        <div class="question fn_switch">
+                            <span>How do I earn my certificates? </span>
+                        </div>
+                        <div class="dropdown">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem obcaecati architecto eaque, at ut sapiente amet dolor quo eius deserunt aut, eligendi enim excepturi impedit molestias quos laudantium fugiat optio.
+                        </div>
+
+                        <div class="question fn_switch">
+                            <span>Can I email the instructor if I have questions?</span>
+                        </div>
+                        <div class="dropdown">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem obcaecati architecto eaque, at ut sapiente amet dolor quo eius deserunt aut, eligendi enim excepturi impedit molestias quos laudantium fugiat optio.
+                        </div>
+
+                        <div class="question fn_switch">
+                            <span>Wil these courses help me advanced my career?</span>
+                        </div>
+                        <div class="dropdown">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem obcaecati architecto eaque, at ut sapiente amet dolor quo eius deserunt aut, eligendi enim excepturi impedit molestias quos laudantium fugiat optio.
+                        </div>
+
+                        <div class="question fn_switch">
+                            <span>More questions?</span>
+                        </div>
+                        <div class="dropdown">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem obcaecati architecto eaque, at ut sapiente amet dolor quo eius deserunt aut, eligendi enim excepturi impedit molestias quos laudantium fugiat optio.
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <h2 class="h2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur at erat eget eros aliquam mattis
+            </h2>
+
+            <div class="fn_slider">
+                <div class="review">
+                    <div class="review__info">
+                        <div class="review__info-photo">
+                            <img src="" alt="">
+                        </div>
+                        <div class="review__info-main">
+                            <span>Joe Doe</span>
+                            <span>Financial Controller</span>
+                        </div>
+                    </div>
+                    <div class="review__txt">
+                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita voluptates quasi ipsa? Consequatur numquam reprehenderit aliquid pariatur at sed saepe accusamus similique ducimus, incidunt nesciunt voluptas tempora, magni praesentium. Distinctio!</span>
+                    </div>
+                    <a href="#"class="review__more">Read more</a>
+                </div>
+                <div class="review">
+                    <div class="review__info">
+                        <div class="review__info-photo">
+                            <img src="" alt="">
+                        </div>
+                        <div class="review__info-main">
+                            <span>Joe Doe</span>
+                            <span>Financial Controller</span>
+                        </div>
+                    </div>
+                    <div class="review__txt">
+                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita voluptates quasi ipsa? Consequatur numquam reprehenderit aliquid pariatur at sed saepe accusamus similique ducimus, incidunt nesciunt voluptas tempora, magni praesentium. Distinctio!</span>
+                    </div>
+                    <a href="#"class="review__more">Read more</a>
+                </div>
+                <div class="review">
+                    <div class="review__info">
+                        <div class="review__info-photo">
+                            <img src="" alt="">
+                        </div>
+                        <div class="review__info-main">
+                            <span>Joe Doe</span>
+                            <span>Financial Controller</span>
+                        </div>
+                    </div>
+                    <div class="review__txt">
+                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita voluptates quasi ipsa? Consequatur numquam reprehenderit aliquid pariatur at sed saepe accusamus similique ducimus, incidunt nesciunt voluptas tempora, magni praesentium. Distinctio!</span>
+                    </div>
+                    <a href="#"class="review__more">Read more</a>
+                </div>
+                <div class="review">
+                    <div class="review__info">
+                        <div class="review__info-photo">
+                            <img src="" alt="">
+                        </div>
+                        <div class="review__info-main">
+                            <span>Joe Doe</span>
+                            <span>Financial Controller</span>
+                        </div>
+                    </div>
+                    <div class="review__txt">
+                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita voluptates quasi ipsa? Consequatur numquam reprehenderit aliquid pariatur at sed saepe accusamus similique ducimus, incidunt nesciunt voluptas tempora, magni praesentium. Distinctio!</span>
+                    </div>
+                    <a href="#"class="review__more">Read more</a>
+                </div>
+                <div class="review">
+                    <div class="review__info">
+                        <div class="review__info-photo">
+                            <img src="" alt="">
+                        </div>
+                        <div class="review__info-main">
+                            <span>Joe Doe</span>
+                            <span>Financial Controller</span>
+                        </div>
+                    </div>
+                    <div class="review__txt">
+                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita voluptates quasi ipsa? Consequatur numquam reprehenderit aliquid pariatur at sed saepe accusamus similique ducimus, incidunt nesciunt voluptas tempora, magni praesentium. Distinctio!</span>
+                    </div>
+                    <a href="#"class="review__more">Read more</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

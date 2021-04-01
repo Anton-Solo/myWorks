@@ -1,0 +1,34 @@
+.slick-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #3271D2;
+    border: none;
+    width: 64px;
+    height: 64px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.slick-prev {
+    left: -60px;
+}
+.slick-prev::before {
+    content: url(../../img/arrow-left.png);
+    position: absolute;
+    top: 55%;
+    left: 53%;
+    transform: translate(-50%, -50%);
+}
+
+.slick-next {
+    right: -60px;
+}
+
+.slick-next::before {
+    content: url(../../img/arrow.png);
+    position: absolute;
+    top: 55%;
+    left: 53%;
+    transform: translate(-50%, -50%);
+}

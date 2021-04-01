@@ -1,0 +1,35 @@
+.tool {
+    display: none!important;
+    position: absolute;
+    top: -35px;
+    left: calc(100% + 10px);
+    width: 191px;
+    background: #1E2939;
+    border-radius: 4px;
+    padding: 16px;
+    font-size: 14px;
+    line-height: 160%;
+    text-align: center;
+    color: $main-color;
+}
+
+.tool::before {
+    content: '';
+    position: absolute;
+    top: 44%;
+    left: -16px;
+    border: 8px solid transparent; /* Прозрачные границы */
+    border-top: 8px solid #1E2939;
+    transform: rotate(-270deg);
+}
+
+.card__includes-spec {
+    position: relative;
+    margin-left: 5px;
+    cursor: pointer;
+    padding-top: 5px;
+
+    &:hover .tool{
+        display: block!important;
+    }
+}

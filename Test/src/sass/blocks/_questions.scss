@@ -1,0 +1,40 @@
+.questions {
+    background: $main-color;
+    padding: 122px 0; 
+    margin-bottom: 80px;
+
+    .question {
+        position: relative;
+        padding: 14px 0;
+        border-bottom: 1px solid #EBEBEB;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 25px;
+        color: #676767;
+        cursor: pointer;
+    }
+    .question::after,
+    .question::before {
+        position: absolute;
+        right: 8px;
+        top: 47%;
+        content: ' ';
+        height: 16px;
+        width: 2.3px;
+        background-color: #3271D2;
+        border-radius: 100px;
+    }
+    .question::before {
+        transform: rotate(90deg);
+    }
+    .question.active::after {
+        display: none;
+    }
+    .dropdown {
+        display: none;
+        margin-top: 20px;
+        font-size: 18px;
+        line-height: 25px;
+        color: #132e57;
+    }
+}

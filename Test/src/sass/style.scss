@@ -1,0 +1,64 @@
+@import 'blocks/header';
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #E5E5E5;
+}
+* ,
+*:before,
+*:after {
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+    outline: none
+}
+.h1 {
+    font-weight: bold;
+    font-size: 56px;
+    line-height: 72px;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 0 0 32px;
+}
+.h2 {
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 44px;
+    text-align: center;
+    color: #132E57;
+    margin: 0 0 48.45px;
+}
+.h3 {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 140%;
+    color: #132E57;
+    margin: 0 0 16px;
+}
+.h4 {
+    font-size: 18px;
+    line-height: 29px;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 0;
+}
+.h5 {
+    background: #3271D2;
+    border-radius: 8px 8px 0px 0px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 22px;
+    color: #FFFFFF;
+    margin: 0;
+    text-align: center;
+    padding: 5px 0;
+}
+
+@import 'blocks/header';
+@import 'blocks/subheader';
+@import 'blocks/buttons';
+@import 'blocks/properties';
+@import 'blocks/questions';
+@import 'blocks/review';
+@import 'blocks/slick';
+@import 'blocks/toolkit';

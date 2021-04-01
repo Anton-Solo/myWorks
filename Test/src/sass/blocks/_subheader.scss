@@ -1,0 +1,134 @@
+.subheader {
+    position: relative;
+    padding: 80px 0 269px;
+    
+    .container {
+        position: relative;
+    }
+    &__cards {
+        position: absolute; 
+        top: 283px;
+        width: 100%;
+
+        &-ben {
+            padding-top: 102px;
+
+            .card__plan-label {
+                color: #132E57!important;
+            }
+        }
+
+        &-item {
+            .h5_ben {
+                background: #132E57;
+            }
+        }
+    }
+
+    .card {
+        background: $main-color;
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.06), 0px 3px 6px rgba(0, 0, 0, 0.04);
+        border-radius: 0px 0px 8px 8px;
+        padding: 48px;
+
+        &__type {
+            display: flex;
+            flex-direction: column;
+            font-size: 16px;
+            line-height: 160%;
+            color: #132E57;
+            margin-bottom: 24px;
+
+            &-main {
+                font-weight: bold;
+                font-size: 24px;
+                line-height: 32px;
+                margin: 4px 0 24px;
+            }
+        }
+
+        &__plan {
+            border-bottom: 1px solid #DDDEE0;
+            margin-bottom: 24px;
+            input[type=radio] {
+                position: absolute;
+                z-index: -1;
+                opacity: 0;
+            }
+            input[type=radio]+label {
+                display: inline-flex;
+                align-items: center;
+                user-select: none;
+            }
+            input[type=radio]+label::before {
+                content: '';
+                display: inline-block;
+                width: 16px;
+                height: 16px;
+                flex-shrink: 0;
+                flex-grow: 0;
+                border: 5.5px solid #DDDEE0;
+                border-radius: 50%;
+                margin-right: 16px;
+                background: #DDDEE0;
+            }
+            input[type=radio]:checked+label::before {
+                border-color: #3271D2;
+            }
+            input[type=radio]:checked+label {
+                color: #132E57;
+            }
+            &-label {
+                font-weight: bold;
+                font-size: 18px;
+                line-height: 32px;
+                color: #727477;
+                cursor: pointer;
+            }
+            &-price {
+                font-size: 32px;
+                line-height: 44px;
+            }
+            &-txt {
+                font-size: 14px;
+                line-height: 22px;
+            }
+            .main_btn {
+                margin: 24px 0;
+            }
+        }
+
+        &__includes {
+            font-size: 16px;
+            line-height: 26px;
+            color: #57595D;
+
+            &-list {
+                list-style: none;
+                padding: 0;
+                margin-top: 24px;
+
+                li {
+                    position: relative; 
+                    display: flex;
+                    align-items: center;
+                    padding-left: 28.5px;
+                }
+                li:not(:last-child) {
+                    margin-bottom: 25px;
+                }
+                li::before {
+                    content: url(../../img/check-mark-li.svg);
+                    position: absolute;
+                    top: 55%;
+                    left: 0;
+                    transform: translateY(-50%);
+                }
+            }
+        }
+    }
+}
+
+
+
+
