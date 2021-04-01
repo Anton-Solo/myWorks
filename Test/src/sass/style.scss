@@ -1,4 +1,4 @@
-@import 'blocks/header';
+@import 'base/variables';
 
 body {
     margin: 0;
@@ -62,3 +62,4 @@ body {
 @import 'blocks/review';
 @import 'blocks/slick';
 @import 'blocks/toolkit';
+@import 'blocks/media';

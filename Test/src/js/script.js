@@ -18,5 +18,19 @@ $( document ).ready(function(){
         slidesToShow: 3,
         slidesToScroll: 1,
         arrows: true,
+        responsive: [
+            {
+                breakpoint: 960,
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 720,
+                settings: {
+                    slidesToShow: 1
+                }
+            }
+        ]
     });
 });
