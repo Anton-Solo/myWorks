@@ -14,13 +14,13 @@
             padding-top: 102px;
 
             .card__plan-label {
-                color: #132E57!important;
+                color: $dark-color!important;
             }
         }
 
         &-item {
             .h5_ben {
-                background: #132E57;
+                background: $dark-color;
             }
         }
     }
@@ -36,7 +36,7 @@
             flex-direction: column;
             font-size: 16px;
             line-height: 160%;
-            color: #132E57;
+            color: $dark-color;
             margin-bottom: 24px;
 
             &-main {
@@ -76,7 +76,7 @@
                 border-color: #3271D2;
             }
             input[type=radio]:checked+label {
-                color: #132E57;
+                color: $dark-color;
             }
             &-label {
                 font-weight: bold;

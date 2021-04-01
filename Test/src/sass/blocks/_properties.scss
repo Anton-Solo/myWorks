@@ -20,7 +20,7 @@
             font-size: 18px;
             line-height: 140%;
             text-align: center;
-            color: #132E57;
+            color: $dark-color;
             margin: 4px 0 8px;
         }
         div {
@@ -29,7 +29,7 @@
         }
     }
     &__head-full {
-        border-top: 8px solid #132E57;
+        border-top: 8px solid $dark-color;
         border-radius: 0px 8px 0px 0px;
     }
     tbody td {
@@ -37,6 +37,12 @@
         border-top: 1px solid #DDDEE0;
         height: 80px;
         text-align: center;
+
+        span {
+            font-size: 16px;
+            line-height: 160%;
+            color: #57595D;
+        }
     }
     tbody tr td:first-child {
         text-align: left;
@@ -70,7 +76,7 @@
             font-weight: bold;
             font-size: 18px;
             line-height: 140%;
-            color: #132E57;
+            color: $dark-color;
             margin-bottom: 8px;
         }
         .main_btn {

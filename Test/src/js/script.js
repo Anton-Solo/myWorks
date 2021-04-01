@@ -28,9 +28,17 @@ $( document ).ready(function(){
             {
                 breakpoint: 720,
                 settings: {
-                    slidesToShow: 1
+                    slidesToShow: 1,
+                    arrows: false,
                 }
             }
         ]
+    });
+
+    $('.burger__btn').on('click', function() {
+        $('.burger__menu').fadeIn(300);
+    });
+    $('.close').on('click', function() {
+        $('.burger__menu').fadeOut(300);
     });
 });

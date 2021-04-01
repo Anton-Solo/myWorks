@@ -1,0 +1,46 @@
+.burger {
+    display: none;
+    position: relative;
+    width: max-content;
+    margin-left: auto;
+    &__menu {
+        display: none;
+        position: absolute;
+        left: -150px;
+        top: 0;
+        z-index: 2;
+        background-color: $main-color;
+        padding: 10px;
+        width: 200px;
+        border-radius: 5px;
+        &-nav {
+            display: flex;
+            flex-direction: column;
+            a {
+                font-size: 16px;
+                line-height: 19px;
+                color: $dark-color;
+                text-decoration: none;
+            }
+            a:not(:last-child) {
+                margin-bottom: 5px;
+            }
+            .close {
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+            
+        }
+        
+    }
+    &__started {
+        font-weight: bold;
+        line-height: 29px;
+        text-align: center;
+        width: 124px;
+        border: 1px solid $dark-color;
+        border-radius: 5px;
+        padding: 16px 5.5px;
+    }
+}

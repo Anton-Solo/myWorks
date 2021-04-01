@@ -1,0 +1,123 @@
+@media (max-width: 540px) {
+    .h1 {
+        font-size: 50px;
+        line-height: 65px;
+    }
+    .burger {
+        display: block;
+    }
+    .header__nav {
+        display: none;
+    }
+    .subheader {
+        padding: 40px 0 30px;
+        &__cards {
+            position: static;
+            margin-top: 20px;
+            &-ben {
+                padding-top: 30px;
+            }
+        }
+
+        .card {
+            padding: 28px;
+            &__type {
+                font-size: 14px;
+                line-height: 140%;
+
+                &-main {
+                    margin: 4px 0 10px;
+                }
+            }
+
+            &__plan {
+                &-price {
+                    font-size: 24px;
+                }
+                input[type=radio]+label::before {
+                    margin-right: 5px;
+                }
+                &-label {
+                    font-size: 15px;
+                }
+                &-txt {
+                    font-size: 12px;
+                }
+            }
+            &__includes {
+                font-size: 14px;
+            }
+        }
+        
+    }
+
+    .tool {
+        top: -54px;
+        width: 88px;
+        padding: 13px;
+        font-size: 12px;
+    }
+    .properties {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        &__head {
+            span {
+                font-size: 12px;
+                line-height: 140%;
+            }
+            span:nth-child(2) {
+                font-size: 15px;
+                line-height: 130%;
+            }
+
+            
+        }
+        tbody td  {
+            span {
+                font-size: 14px;
+                line-height: 140%;
+            }
+           
+        }
+        tbody tr td:first-child {
+            padding: 0 10px;
+            div {
+                align-items: center;
+            }
+        }
+            
+        &__foot {
+            span {
+                font-size: 14px;
+                line-height: 140%;
+                text-align: center;
+            }
+            .main_btn {
+                font-size: 13px;
+            }
+            &-spec {
+                margin-bottom: 27px;
+            }
+        }
+    }
+
+    .questions {
+        padding: 40px 0;
+        margin-bottom: 40px;
+
+        .question {
+            font-size: 15px;
+            line-height: 21px;
+            padding: 14px 20px 5px 0;
+        }
+    }
+    .h2 {
+        font-size: 28px;
+        line-height: 38px;
+    }
+    .dropdown {
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+}
